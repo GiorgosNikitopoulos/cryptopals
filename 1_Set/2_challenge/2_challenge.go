@@ -17,8 +17,7 @@ func main() {
 	second_hex := "686974207468652062756c6c277320657965"
 	first_hexdata, _ := hex.DecodeString(first_hex)
 	second_hexdata, _ := hex.DecodeString(second_hex)
-	fmt.Printf("%s", hexdata)
-	xored_data := xor(first_hexdata, second_hexdata, length)
-	fmt.Printf("xor data: %s", xored_data)
-	fmt.Println("This is the first programme in go.")
+	fmt.Printf("%s\n", first_hexdata)
+	xored_data := xor(first_hexdata, second_hexdata)
+	fmt.Printf("xor data: %s\n", xored_data)
 }
